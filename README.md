@@ -5,7 +5,7 @@ Home: https://github.com/YuLab-SMU/aplot
 
 Package license: Artistic-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: For many times, we are not just aligning plots as what 'cowplot' and 'patchwork' did. Users would like to align associated information that requires axes to be exactly matched in subplots, e.g. hierarchical clustering with a heatmap. This package provides utilities to aligns associated subplots to a main plot at different sides (left, right, top and bottom) with axes exactly matched.
 
