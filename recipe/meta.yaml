@@ -1,4 +1,4 @@
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/aplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/aplot/aplot_{{ version }}.tar.gz
-  sha256: 56e975c697b7cc3b323afe5ce83028915024c8bdfc2424e3fb889e9253cd7822
+  sha256: 1c5e622401570afe9dd3363c8b5a4090c79692911ed471bc7eaecb76412af55d
 
 build:
   merge_build_host: true  # [win]
