@@ -26,16 +26,20 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-ggfun >=0.0.4
     - r-ggplot2
     - r-ggplotify
     - r-magrittr
     - r-patchwork
+    - r-yulab.utils
   run:
     - r-base
+    - r-ggfun >=0.0.4
     - r-ggplot2
     - r-ggplotify
     - r-magrittr
     - r-patchwork
+    - r-yulab.utils
 
 test:
   commands:
