@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/aplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/aplot/aplot_{{ version }}.tar.gz
-  sha256: 47efc04757a7e2b8266abb17d66020a6f359e538690a64b78238a4f7d838f5b4
+  sha256: ceeb7fafdd6e8630b68498626c54fb9d3e1aa5ddf562c696347a5f5d86fffe18
 
 build:
   merge_build_host: true  # [win]
@@ -26,16 +26,20 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-ggfun >=0.0.4
     - r-ggplot2
     - r-ggplotify
     - r-magrittr
     - r-patchwork
+    - r-yulab.utils
   run:
     - r-base
+    - r-ggfun >=0.0.4
     - r-ggplot2
     - r-ggplotify
     - r-magrittr
     - r-patchwork
+    - r-yulab.utils
 
 test:
   commands:
