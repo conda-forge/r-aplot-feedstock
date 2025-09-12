@@ -1,4 +1,4 @@
-{% set version = "0.2.8" %}
+{% set version = "0.2.9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/aplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/aplot/aplot_{{ version }}.tar.gz
-  sha256: 8fc4aa72c7eaf873715e8fa6fac4ca8e294493a5135f142cfaab52fe3c336bfa
+  sha256: ab0c78b25319324bc9bdbdcd7c165c0f040767c8eccca059571008128af3e57b
 
 build:
   number: 0
