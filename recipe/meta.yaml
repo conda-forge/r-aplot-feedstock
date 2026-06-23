@@ -1,4 +1,4 @@
-{% set version = "0.2.9" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/aplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/aplot/aplot_{{ version }}.tar.gz
-  sha256: ab0c78b25319324bc9bdbdcd7c165c0f040767c8eccca059571008128af3e57b
+  sha256: 06362e284b2921fee72c0f289f40de35b56bd7480090c044acb95e99a50ec71c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -47,8 +47,8 @@ test:
 about:
   home: https://github.com/YuLab-SMU/aplot
   license: Artistic-2.0
-  summary: For many times, we are not just aligning plots as what 'cowplot' and 'patchwork' did. Users would like to align associated information that requires axes to be exactly matched in subplots, e.g. hierarchical clustering with a heatmap. This package provides utilities to aligns associated subplots to a main plot
-    at different sides (left, right, top and bottom) with axes exactly matched.
+  summary: For many times, we are not just aligning plots as what 'cowplot' and 'patchwork' did. Users would like to align associated information that requires axes to be exactly matched in subplots, e.g. hierarchical clustering with a heatmap. This package provides utilities to aligns associated subplots to a main 
+    plot at different sides (left, right, top and bottom) with axes exactly matched.
   license_family: OTHER
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0
